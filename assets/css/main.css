@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/Vazir.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #00c4b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "vazir";
+  direction: rtl;
+}
+
+.main {
+  margin: 2rem auto;
+  max-width: 50rem;
+  background-color: #fff;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.header {
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #f7f7f7;
+  padding: 2rem 4rem;
+}
+
+.header h2 {
+  margin: 0;
+  color: #00c4b0;
+  user-select: none;
+}
+
+.form {
+  padding: 3rem 4rem;
+}
+
+.form button {
+  width: 100%;
+  background-color: #00c4b0;
+  color: #fff;
+  padding: .8rem 0;
+  border-radius: .4rem;
+  border: .1rem solid transparent;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: all .3s;
+  font-size: 1.8rem;
+  font-family: "vazir";
+}
+
+.form button:hover {
+  background: transparent;
+  border: 0.1rem solid #00c4b0;
+  color: #333;
+}
+
+.form-controls {
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.form-controls label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: #212121;
+  font-size: 1.2rem;
+  font-weight: 400;
+  user-select: none;
+}
+
+.form-controls input {
+  width: 100%;
+  border: .2rem solid #d8d8d8;
+  border-radius: .5rem;
+  display: block;
+  font-size: 1.4rem;
+  padding: 1rem;
+  direction: ltr;
+}
+
+.form-controls input:focus {
+  outline: none;
+  border-color: #9fa8da;
+}
+
+.form-controls.success input {
+  border-color: #66bb6a;
+}
+
+.form-controls.error input {
+  border-color: #ef5350;
+}
+
+.form-controls small {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  color: #ef5350;
+}
+
+.form-controls.error small {
+  visibility: visible;
+}
+/*# sourceMappingURL=main.css.map */
